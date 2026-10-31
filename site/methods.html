@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Source-linked comparison of published UK nursery fee tools and the Nursery Fee Clarity research method, including overlaps, evidence links and limits.">
+<title>How the methods compare — Nursery Fee Clarity</title>
+<style>
+:root{color-scheme:light;--ink:#173b41;--muted:#52676b;--bg:#f8f7f3;--accent:#176b62;--border:#d6e0dc}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}
+header{background:#fff;border-bottom:1px solid var(--border);padding:20px 0}.wrap{max-width:1050px;margin:auto;padding:0 24px}
+a{color:var(--accent)}h1,h2,h3{line-height:1.2;letter-spacing:-.03em}h1{font-size:clamp(2rem,5vw,3.3rem)}h2{margin-top:40px}p{max-width:790px}.lead{font-size:1.15rem;color:#36565b}
+main{padding:34px 0 70px}.panel{background:white;border:1px solid var(--border);padding:22px;border-radius:14px;margin:18px 0}
+table{border-collapse:collapse;background:white;width:100%;font-size:.93rem}
+th,td{text-align:left;padding:14px;vertical-align:top;border-bottom:1px solid var(--border)}
+th{background:#eaf3ef}td:first-child{font-weight:700;min-width:150px}
+.scroll{overflow-x:auto;border:1px solid var(--border);border-radius:13px}
+.tag{display:inline-block;font-size:.83rem;font-weight:700;border-radius:10px;background:#e8f1ed;padding:4px 9px}
+.small{font-size:.92rem;color:var(--muted)}footer{background:var(--ink);color:#fff;padding:22px 0}footer a{color:#d0f6ea}
+:focus-visible{outline:3px solid orange;outline-offset:3px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="index.html">← Nursery Fee Clarity research preview</a></div></header>
+<main><div class="wrap">
+<p class="tag">Published-method comparison · 31 October 2026</p>
+<h1>How existing nursery fee tools work — and the difference we're testing</h1>
+<p class="lead">We're examining one specific question: can a parent start with an original nursery fee schedule and a proposed booking, then receive an evidence-linked calculation or an exact explanation of which essential condition is unresolved?</p>
+<p>This is a comparison of what seven suppliers <strong>publicly describe</strong>—their inputs, processing steps and outputs. It is <strong>not</strong> a claim that any supplier lacks an undocumented feature or that our current software has outperformed their products.</p>
+<h2>The proposed workflow</h2>
+<div class="panel"><p><strong>Original fee schedule + intended booking → rules supported by quoted source passages → check booking conditions, period and extras → calculate a justified amount or ask a specific follow-up question.</strong></p>
+<p class="small">Current status: The public demonstration uses invented rules entered by the developer; it does not automatically read real nursery documents. In unfamiliar-provider testing, just 4 of 12 numerical cases matched provisional reference totals, with eight withheld. The automated approach needs further validation.</p></div>
+<h2>Seven published workflows</h2>
+<div class="scroll"><table><thead><tr><th scope="col">Service</th><th scope="col">Documented input / processing</th><th scope="col">Result and overlap</th><th scope="col">Specific comparison point</th></tr></thead><tbody>
+<tr><td><a href="https://clevermum.co.uk/tools/childcare-planner/" target="_blank" rel="noopener noreferrer">Clever Mum</a></td><td>Enter the provider's written quote after confirmed funded hours, extras, number of chargeable weeks and joining costs.</td><td>Compares first-year budgets across three choices; keeps unknown amounts unknown.</td><td>Our proposed step occurs <em>before</em> a parent has interpreted applicable prices into a complete quote.</td></tr>
+<tr><td><a href="https://clearnurseryfees.co.uk/invoice-checker" target="_blank" rel="noopener noreferrer">Clear Nursery Fees</a></td><td>Use calculator inputs or invoice line items, including an option to scan the invoice; check funded hours and charged extras.</td><td>Funding estimates and invoice-consistency flags. Strong overlap in verification.</td><td>Our proposed entry point is the original conditional fee schedule <em>before invoicing</em>, not invoice-only checking.</td></tr>
+<tr><td><a href="https://nurserywise.co.uk/" target="_blank" rel="noopener noreferrer">NurseryWise</a></td><td>Aggregates nursery information and published fee statements, with linked source sentences.</td><td>Search, comparison and source-linked fee information. Source citations are <em>not novel</em> on their own.</td><td>We propose evaluating multiple fee clauses together against a specific intended booking.</td></tr>
+<tr><td><a href="https://localnurseryfees.co.uk/how-we-work" target="_blank" rel="noopener noreferrer">Local Nursery Fees</a></td><td>Checks published fees and funding data, marks missing rates unknown; has a <a href="https://localnurseryfees.co.uk/check-a-nursery-quote" target="_blank" rel="noopener noreferrer">quote checker</a>.</td><td>Published-rate context, quote guidance, dated checks. Strong overlap in provenance and uncertainty.</td><td>Potential additional step: derive a booking-specific tariff from its actual conditions, not just compare a quoted figure with local fees.</td></tr>
+<tr><td><a href="https://toddlekids.com/" target="_blank" rel="noopener noreferrer">Toddle</a></td><td>Parent enters childcare pattern and a known nursery rate or an average, alongside funding assumptions.</td><td>Nursery shortlisting and estimated monthly cost; meaningful overlap in funding and cost estimates.</td><td>We propose resolving conditional price rules for the requested booking directly from the original published wording.</td></tr>
+<tr><td><a href="https://help.famly.co/en/articles/4912323-invoicing-profiles" target="_blank" rel="noopener noreferrer">Famly</a></td><td>Nursery staff configure schedules, pricing schemes, funded hours, extras and invoices; <a href="https://help.famly.co/en/articles/12441806-a-new-invoicing-experience" target="_blank" rel="noopener noreferrer">invoicing documentation</a> includes detailed examples.</td><td>Sophisticated conditional billing and parent-visible invoices. Strong overlap in calculation capabilities.</td><td>Proposed distinction: independent parent-side interpretation of public fee terms, without provider-side configuration.</td></tr>
+<tr><td><a href="https://www.nurseryinabox.com/funding-invoicing-payments" target="_blank" rel="noopener noreferrer">Nursery in a Box</a></td><td>Nursery-entered bookings, funded sessions, extras and discounts feed reviewed invoices.</td><td>Itemised bills, allocations and payment status. Strong overlap in conditional billing.</td><td>Proposed distinction: pre-contract independent checking with original published tariff terms rather than nursery-maintained records.</td></tr>
+</tbody></table></div>
+<p class="small">Supplier-operated public pages checked 31 October 2026. Their descriptions may change. Terms of use apply; our analysis links to public descriptions instead of copying their datasets.</p>
+<h2>A concrete difference — without pretending competitors fail</h2>
+<div class="panel"><h3>Fictional minimum booking example</h3>
+<p>Suppose a document states: <strong>£72 per full day</strong> and <strong>minimum booking of two full days weekly</strong>. A request for one day has a <em>mathematical multiplication</em> of £72, but it does not have a justified bookable price under those stated rules.</p>
+<p>A rate-only calculation that receives just <em>£72 × 1</em> lacks the minimum-booking condition. A correctly working source-first rule verifier would withhold the amount and ask whether a different booking arrangement is possible. This shows a <strong>logical difference between two specified methods</strong>, not evidence that any named competitor makes the error.</p></div>
+<h2>What we can and cannot conclude</h2>
+<ul>
+<li><strong>Supported:</strong> published workflows start from different kinds of data—quotes, invoices, provider-managed bookings, provider listings or input rates—and overlap with aspects of our proposal.</li>
+<li><strong>Supported as a method proposition:</strong> enforcing source-backed tariff conditions can avoid unjustified cost figures when a simpler rate-only method lacks required conditions.</li>
+<li><strong>Not yet proved:</strong> our implementation's accuracy on new nurseries, lower user effort, superiority to competitor outcomes, commercial demand, or a defensible replication barrier.</li>
+</ul>
+<p>Our research will test comprehension, parent input effort, usefulness and decision correctness. We will maintain source evidence separately from user opinions; positive feedback is not proof of calculation accuracy.</p>
+<p><a href="index.html#research">Give feedback on the fictional demonstration</a> · <a href="https://github.com/Dapson18/nursery-fee-clarity-research/blob/main/research/DOCUMENTED_WORKFLOW_COMPARISON_2026-10-31.md" target="_blank" rel="noopener noreferrer">Full research methodology and limitations</a> · <a href="privacy.html">Privacy information</a></p>
+</div></main>
+<footer><div class="wrap">Nursery Fee Clarity · public research only. No real childcare entitlement or nursery cost decisions are offered.</div></footer>
+</body></html>
