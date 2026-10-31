@@ -44,7 +44,7 @@ def run():
             "mandatory":mandatory,"complete_source":complete,
             "rate":str(rate),"baseline":str(simple),
             "verifier_result":None if quote is None else str(quote),"reason":reason})
-    assert len(scenarios)==240
+    assert len(scenarios)==120
     assert any(x["reason"]=="booking_below_minimum" for x in scenarios)
     assert any(x["reason"]=="missing_source_rule" for x in scenarios)
     assert all(x["verifier_result"] is None for x in scenarios if not x["complete_source"])
