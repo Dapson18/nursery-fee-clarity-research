@@ -1,0 +1,81 @@
+name: Nursery fee research feedback
+description: Share non-identifying opinions about the fictional nursery-fee demonstration. GitHub login required; submissions are PUBLIC.
+title: "[Research feedback] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Public research only.** This issue, your GitHub username and your choices will be visible publicly. Do not share a child’s name, invoices, income, address, bookings, phone number, medical information or any nursery-specific personal circumstances.
+        You can close this page and use the site's **Copy feedback locally** option instead.
+        This form is not a sign-up, private survey or entitlement assessment.
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to childcare
+      description: Please choose a broad category only.
+      options:
+        - Currently researching nursery options
+        - Parent or guardian currently using nursery care
+        - Previously arranged nursery care
+        - Professional or other interest
+        - Prefer not to say
+    validations:
+      required: true
+  - type: dropdown
+    id: challenge
+    attributes:
+      label: Most challenging part of nursery costs
+      options:
+        - Understanding total costs and extras
+        - Understanding funded hours and restrictions
+        - Comparing different nursery fee structures
+        - Checking a quote against published terms
+        - Knowing what to clarify with the nursery
+        - None of these
+    validations:
+      required: true
+  - type: dropdown
+    id: clarity
+    attributes:
+      label: How clear was the fictional example?
+      options:
+        - Very clear
+        - Somewhat clear
+        - Neither clear nor unclear
+        - Somewhat unclear
+        - Very unclear
+        - Did not try the example
+    validations:
+      required: true
+  - type: dropdown
+    id: usefulness
+    attributes:
+      label: Would source-linked explanations and explicit unknowns help you decide?
+      options:
+        - Very useful
+        - Somewhat useful
+        - Unsure
+        - Not very useful
+        - Not useful at all
+    validations:
+      required: true
+  - type: dropdown
+    id: comparison
+    attributes:
+      label: How does the proposed approach compare with your usual method?
+      options:
+        - Would meaningfully improve my usual method
+        - Might help alongside my usual method
+        - No clear difference
+        - Would be less useful
+        - I have no usual comparison method
+    validations:
+      required: true
+  - type: checkboxes
+    id: visibility
+    attributes:
+      label: Public-posting acknowledgment
+      options:
+        - label: I understand this feedback and my GitHub username will be publicly visible. I have included no private family information.
+          required: true
