@@ -11,6 +11,14 @@ All example prices, booking rules and charges are invented. No live nursery quot
 
 **Research feedback is not submitted or saved on the server.** The visitor can copy it locally and share it separately; no email or survey destination is configured yet.
 
+## Documented competitor methodology
+
+The source-linked, qualified seven-provider analysis is in [research/DOCUMENTED_WORKFLOW_COMPARISON_2026-10-31.md](research/DOCUMENTED_WORKFLOW_COMPARISON_2026-10-31.md). This only compares **documented supplier workflows**; it does not assert missing undocumented features or proven overall superiority. No matched external competitor cases have been executed.
+
+## Feedback and recruitment limitations
+
+A public GitHub issue is not an anonymous survey, and its count does not confirm unique customers or genuine parents. The demonstration does not collect email addresses or accept invoices. For broader recruitment, put a named data controller/contact, lawful basis and retention schedule in place and consider a private feedback mechanism appropriate to the research design before collecting personal data. No personal information should be shared via public GitHub issues.
+
 ## Deployment
 
 Use a separate Render Static Site, branch `main`, build command `echo research-preview`, publish directory `site`. Other services remain independent.
