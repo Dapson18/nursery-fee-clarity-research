@@ -5,15 +5,15 @@ An early-stage, **fictional** interactive demonstration of evidence-linked child
 ## Website
 
 - `site/index.html`: interactive demonstration and copy-only research questionnaire.
-- `site/privacy.html`: privacy and research limitations.
+- `site/privacy.html`: privacy and research limitations.\n- `site/methods.html`: readable, supplier-linked seven-provider documented-workflow comparison.
 
 All example prices, booking rules and charges are invented. No live nursery quotes, real funding/entitlement decisions, document submissions, or fee-verification API is offered.
 
-**Research feedback is not submitted or saved on the server.** The visitor can copy it locally and share it separately; no email or survey destination is configured yet.
+**Research feedback is not submitted or saved on the server.** The visitor can complete a multi-question on-page research questionnaire and copy it locally. An optional public GitHub issue form requires a GitHub account; it does not automatically receive the on-page selections. There is no anonymous private submission endpoint or email destination.
 
 ## Documented competitor methodology
 
-The source-linked, qualified seven-provider analysis is in [research/DOCUMENTED_WORKFLOW_COMPARISON_2026-10-31.md](research/DOCUMENTED_WORKFLOW_COMPARISON_2026-10-31.md). This only compares **documented supplier workflows**; it does not assert missing undocumented features or proven overall superiority. No matched external competitor cases have been executed.
+The source-linked, qualified seven-provider analysis is in [research/DOCUMENTED_WORKFLOW_COMPARISON_2026-10-31.md](research/DOCUMENTED_WORKFLOW_COMPARISON_2026-10-31.md). This only compares **documented supplier workflows**; it does not assert missing undocumented features or proven overall superiority. No matched external competitor cases have been executed. Feedback questions, denominator and limitation rules are specified in [research/FEEDBACK_EVIDENCE_PROTOCOL_2026-10-31.md](research/FEEDBACK_EVIDENCE_PROTOCOL_2026-10-31.md).
 
 ## Feedback and recruitment limitations
 
